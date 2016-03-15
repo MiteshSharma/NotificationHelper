@@ -11,6 +11,8 @@ You can use this as module in your project and upload this in your artifactory r
 
 #Notification Content
 Add notification_type in you message which send :
+
 1. PUSH_NOTIFICATION
 2. APP_NOTIFICATION
-depending on what kind of notification it is and how you want to handle it. Without this, no notification will be handled.
+
+depending on what kind of notification it is and how you want to handle it. If no notification type defined, then it will assume APP_NOTIFICATION by default.
