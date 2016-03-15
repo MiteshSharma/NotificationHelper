@@ -40,7 +40,7 @@ public class NotificationService extends IntentService {
         String message = intent.getStringExtra("message");
         String payload = intent.getStringExtra("payload");
         if (notificationTypeStr == null) {
-            return;
+            notificationTypeStr = "APP_NOTIFICATION"
         }
         NotificationType notificationType = NotificationType.valueOf(notificationTypeStr);
 
