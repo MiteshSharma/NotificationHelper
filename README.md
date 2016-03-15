@@ -8,3 +8,9 @@ Please add NotificationBroadcastReceiver as notification receiver in your Androi
 Implement INotificationService interface to provide where you want to handle these notifications.
 
 You can use this as module in your project and upload this in your artifactory repository to use later. Just add : classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.0.1" to your main .gradle file and upload .aar file on your artifactory repository.
+
+#Notification Content
+Add notification_type in you message which send :
+1. PUSH_NOTIFICATION
+2. APP_NOTIFICATION
+depending on what kind of notification it is and how you want to handle it. Without this, no notification will be handled.
