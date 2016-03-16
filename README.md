@@ -22,6 +22,7 @@ depending on what kind of notification it is and how you want to handle it. If n
 2. Implement INotificationService in your main application(which extends Application) class which provides App notification and Push notification handling class. As we take it from main application context.
 3. Specify com.myth.notification.receiver.NotificationBroadcastReceiver.java class as you broadcast receiver for notification. Google permissions for push notification and how to add broadcast receiver to handle notifications if you have trouble doing it.
 4. You can schedule notifications using class NotificationScheduler.
+5. Do add this as submodule in your repo, so that all you changes can be easily done and updated in this git repo.
 
 
 PS: Do fix bug if you find any and help make this repo perfect. :)
