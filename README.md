@@ -20,9 +20,7 @@ depending on what kind of notification it is and how you want to handle it. If n
 #Steps to start:
 1. Clone this in your project and import as module. If it doesn't work directly, create new module and give that new module this repo path so it will override any old module setting and act as fresh module.
 2. Implement INotificationService in your main application(which extends Application) class which provides App notification and Push notification handling class. As we take it from main application context.
-3. Specify com.myth.notification.receiver.NotificationBroadcastReceiver.java class as you broadcast receiver for notification. Google if you have trouble doing it. Below are permissions for push notification handling.
-  <permission android:name="com.name.name.permission.C2D_MESSAGE" android:protectionLevel="signature" />
-  <uses-permission android:name="com.name.name.permission.C2D_MESSAGE" />
+3. Specify com.myth.notification.receiver.NotificationBroadcastReceiver.java class as you broadcast receiver for notification. Google permissions for push notification and how to add broadcast receiver to handle notifications if you have trouble doing it.
 4. You can schedule notifications using class NotificationScheduler.
 
 
